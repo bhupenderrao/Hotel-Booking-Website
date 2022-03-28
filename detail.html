@@ -12,8 +12,8 @@
 
         <!-- Header starts here -->
         <header>
-            <img src="assests/images/logo.png" height="100px" width="150px" alt="logo">
-            <a href="login.html" target="_blank">Login</a>            
+            <a href="index.html"><img src="assests/images/logo.png" height="100px" width="150px" alt="logo"></a>
+            <a href="login.html">Login</a>            
         </header>
         <!-- Header ends her -->
 
@@ -22,7 +22,25 @@
         <div>
             <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Image of Radisson Blu Hotel">
             <br>
-            <a href="payment.html">Book Now</a>
+            
+            <form action="payment.html" method="get">
+                <label for="number">Adults:</label>
+                <input type="number" name="adults" id="number" required value="1" min="1">
+                <br>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+                <br>
+                <label for="fromDate">From Date:</label>
+                <input type="date" name="fromDate" id="fromDate" required>
+                <br>
+                <label for="toDate">To Date:</label>
+                <input type="date" name="toDate" id="toDate" required>
+                <br>
+                <label for="total">Total:</label>
+                <input type="text" name="price" readonly>
+                <br>
+                <input type="submit" value="Book Now">
+            </form>
 
             <h2>Radisson Blu Hotel</h2>
             <p>
@@ -50,7 +68,7 @@
         <!-- Footer starts here -->
         <footer>
             <section>
-                <a href="contact.html" target="_blank">Contact Us</a>
+                <a href="contact.html">Contact Us</a>
             </section>
 
             <section>
