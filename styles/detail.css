@@ -1,4 +1,13 @@
 #contentDiv img{
     height: 500px;
     width: 500px;
+    margin: 2% 4% 0 4%;
+}
+
+form{
+    margin: 0 4% 1% 4%;
+}
+
+article{
+    margin: 1% 4% 2% 4%;
 }
