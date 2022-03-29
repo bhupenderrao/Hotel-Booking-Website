@@ -3,11 +3,41 @@
     width: 250px;
 }
 
+#contentDiv{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
 #list-view{
-    margin: 2%;
+    margin: 4%;
+
+    /* display: flex;
+    flex-direction: row; */
 }
 
 .hotels-list{
     background-color: rgb(132, 136, 139);
     width: 40%;
+
+    float: left;
+    margin-right: 10%;
+    margin-bottom: 80px; 
+}
+
+.hotels-list > a{
+    text-decoration: none;
+    color: black;
+}
+
+#contentDiv ul a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    font-weight: bold;
+}
+
+#contentDiv ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }

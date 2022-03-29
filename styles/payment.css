@@ -3,6 +3,16 @@
     width: 500px;
 }
 
+#contentDiv{
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+
+#contentDiv > section > a{
+    text-decoration: none;
+    color: black;
+}
+
 #hotelDetails{
     background-color: rgb(132, 136, 139);
     height: 20%;
