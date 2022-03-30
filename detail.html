@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/detail.css">
 
-    <!-- Font Family -->
+    <!-- Font Family Ubuntu -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
 
+    <!-- Font Family for Stars -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
+    <!-- Title of the webpage -->
     <title>Detail</title>
 </head>
 <body>
@@ -34,7 +36,10 @@
         <!-- Content Div starts here -->
         <div id="contentDiv">
 
+            <!-- Section which contains both images and form -->
             <section id="imageAndForm">
+
+                <!-- Div which contains the carousel -->
                 <div id="image-div">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
@@ -59,6 +64,7 @@
                       </div>
                 </div>
                 
+                <!-- Div which contains the form -->
                 <div id="form-div">
                     <form action="payment.html" method="get">
                         <ul style="list-style-type: none;">
@@ -82,6 +88,8 @@
                                 <label class="label-Style" for="total">Total:</label>
                                 <input class="input-Style" type="text" name="price" readonly>
                             </li>
+
+                            <!-- Book Now Button -->
                             <li class="list-Style">
                                     <a href="payment.html">
                                         <button type="button" class="btn">Book Now</button>
@@ -93,7 +101,7 @@
                 
             </section>
             
-
+            <!-- Hotel Details -->
             <article>
                 <h2>Radisson Blu Hotel</h2>
                 <p>
@@ -125,14 +133,18 @@
 
         <!-- Footer starts here -->
         <div class="footer">
+            
+            <!-- Contact Us -->
             <section id="contactUs">
                 <button type="button" class="btn btn-info btn-sm" data-backdrop="false" data-toggle="modal" data-target="#contactModal">Contact Us</button>
             </section>
 
+            <!-- Copyright -->
             <section id="copyright">
                 <span>&copy; 2020 ROOM SEARCH PVT. LTD.</span>
             </section>
 
+            <!-- Social Media Links -->
             <section id="socialMedia">
                 <a href="https://www.facebook.com" target="_blank">
                     <img class="socialMediaImage" src="assests/images/facebook.png" alt="facebook-logo">
