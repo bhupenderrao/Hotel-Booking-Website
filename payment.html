@@ -12,6 +12,9 @@
     <!-- Font Family -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
     <title>Payment</title>
 </head>
 <body>
@@ -19,10 +22,10 @@
     <div id="mainContainer">
 
         <!-- Header starts here -->
-        <header>
+        <div class="header">
             <a href="index.html" id="logo-a"><img id="logo" src="assests/images/logo.png" alt="logo"></a>
-            <a href="login.html" id="login-a">Login</a>            
-        </header>
+            <button type="button" class="btn btn-light btn-sm" data-backdrop="false" data-toggle="modal" data-target="#loginModal">LOGIN</button>            
+        </div>
         <!-- Header ends here -->
 
 
@@ -62,16 +65,18 @@
                     </article> 
                 </p>
 
-                <a href="#">Pay Now</a>
+                <article>
+                    <button type="button" class="btn btn-success" disabled>Pay Now</button>
+                </article>
             </section>
         </div>
         <!-- Content Div ends here -->
 
 
         <!-- Footer starts here -->
-        <footer>
+        <div class="footer">
             <section id="contactUs">
-                <a href="contact.html">Contact Us</a>
+                <button type="button" class="btn btn-info btn-sm" data-backdrop="false" data-toggle="modal" data-target="#contactModal">Contact Us</button>
             </section>
 
             <section id="copyright">
@@ -89,10 +94,79 @@
                     <img class="socialMediaImage" src="assests/images/twitter.png" alt="twitter-logo">
                 </a>
             </section>
-        </footer>
+        </div>
         <!-- Footer ends here -->
         
     </div>
     <!-- Main Div ends here -->
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 </body>
+
+<!-- Login Modal -->
+<div class="modal" tabindex="-1" id="loginModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Please Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="margin: 5%;">
+            <form>
+                <div class="form-group d-flex">
+                  <label for="recipient-name" class="col-form-label" style="margin: 0 30px;">Username:</label>
+                  <input type="text" required placeholder="Enter Username" class="form-control" id="recipient-name">
+                </div>
+                <br>
+                <div class="form-group d-flex">
+                  <label for="message-text" class="col-form-label" style="margin: 0 30px;">Password:</label>
+                  <input type="password" required placeholder="Enter Password" class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Login Modal ends here -->
+
+
+<!-- Contact Us Modal -->
+
+<div class="modal" tabindex="-1" id="contactModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>Thanks you for reaching out!!! <br>
+                Please enter your email and we will get back to you.
+            </p>
+            <form>
+                <div class="form-group d-flex display-inline">
+                  <label for="recipient-name" class="col-form-label">Email:</label>
+                  <input type="email" required placeholder="Enter your email id" class="form-control" id="recipient-name" style="max-width: 50%;">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Contact Us Modal ends here -->
+
 </html>

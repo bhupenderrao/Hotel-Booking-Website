@@ -72,3 +72,17 @@ form{
 .input-Style{
     width: 60%;
 }
+
+.list-Style button{
+    background-color: #e0e0e0;
+    color: green;
+    border: 1px solid green;
+    position: absolute;
+
+    transform: translate(150px);
+}
+
+.list-Style button:hover {    
+    background-color: green;
+    color: #e0e0e0;
+}

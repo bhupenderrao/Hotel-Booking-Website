@@ -1,3 +1,4 @@
+
 html, body, #mainContainer{
     min-height: 100vh;
     background-color: #e0e0e0;
@@ -5,7 +6,7 @@ html, body, #mainContainer{
     margin: 0;
 }
 
-header{
+.header{
     background-color: rosybrown;
     position: fixed;
     top: 0;
@@ -18,21 +19,22 @@ header{
     align-items: center;
 }
 
-header > a{
+.header > a{
     text-decoration: none;
     color: black;
     margin-right: 2%;
 }
 
-header > #logo-a{
+.header > #logo-a{
     margin-left: 1%;
 }
 
-header > #login-a{
+.header > button{
     margin-right: 2%;
 }
 
-footer{
+
+.footer{
     background-color: rosybrown;
     position: fixed;
     bottom: 0;
@@ -45,21 +47,16 @@ footer{
     align-items: center;
 }
 
-footer > #contactUs{
+.footer > #contactUs{
     margin-left: 2%;
 }
 
-footer > #copyright > span{
+.footer > #copyright > span{
     font-size: 10px;
 }
 
-footer > #socialMedia{
+.footer > #socialMedia{
     margin-right: 2%;
-}
-
-footer > #contactUs > a{
-    text-decoration: none;
-    color: black;
 }
 
 #logo{

@@ -11,13 +11,20 @@
 #list-view{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    margin: 2%;
 }
 
 .hotels-list{
     background-color: lightgray;
-    width: 80%;
+    width: 95%;
+    height: 200px;
+    margin: 5%;
 
     display: flex;
+}
+
+.hotels-list:hover{
+    background-color: rosybrown;
 }
 
 
