@@ -49,3 +49,7 @@
 .hotel-content{
     margin: 10%;
 }
+
+.checked{
+    color: orange;
+}

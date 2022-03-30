@@ -1,5 +1,6 @@
 #contentDiv img{
     max-height: 350px;
+    max-width: 480px;
     padding: 2% 0;
 }
 
@@ -85,4 +86,8 @@ form{
 .list-Style button:hover {    
     background-color: green;
     color: #e0e0e0;
+}
+
+.checked{
+    color: orange;
 }
