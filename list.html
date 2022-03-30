@@ -20,8 +20,8 @@
 
         <!-- Header starts here -->
         <header>
-            <a href="index.html"><img id="logo" src="assests/images/logo.png" alt="logo"></a>
-            <a href="login.html">Login</a>            
+            <a href="index.html" id="logo-a"><img id="logo" src="assests/images/logo.png" alt="logo"></a>
+            <a href="login.html" id="login-a">Login</a>            
         </header>
         <!-- Header ends here -->
 
@@ -40,27 +40,44 @@
             </section>
 
             <section id="list-view">
-                <nav class="hotels-list">
-                    <a href="detail.html">
-                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Image of Radisson Blu Hotel">
+                <a href="detail.html">
+                    <nav class="hotels-list">
+                        <div>
+                            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Image of Radisson Blu Hotel">
+                        </div>
+                        
+                        <div class="hotel-content">
                             <h3>Radisson Blu Hotel</h3>
                             <p>5 Star</p>
                             <p>New Delhi</p>
-                    </a>
+                        </div>      
+                    </nav>
+                </a>
+                
+                <nav class="hotels-list">
+                    <div>
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="Image of Lalit Hotel">
+                    </div>
+                    
+                    <div class="hotel-content">
+                        <h3>The Lalit New Delhi</h3>
+                        <p>4.5 Star</p>
+                        <p>New Delhi</p>
+                    </div>
+                    
                 </nav>
                 
                 <nav class="hotels-list">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="Image of Lalit Hotel">
-                    <h3>The Lalit New Delhi</h3>
-                    <p>4.5 Star</p>
-                    <p>New Delhi</p>
-                </nav>
-                
-                <nav class="hotels-list">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Image of Taj Hotel">
-                    <h3>Taj Palace</h3>
-                    <p>4.0 Star</p>
-                    <p>New Delhi</p>
+                    <div>
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Image of Taj Hotel">
+                    </div>
+                    
+                    <div class="hotel-content">
+                        <h3>Taj Palace</h3>
+                        <p>4.0 Star</p>
+                        <p>New Delhi</p>
+                    </div>
+                    
                 </nav>
             </section>
 

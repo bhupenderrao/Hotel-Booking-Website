@@ -20,8 +20,8 @@
 
         <!-- Header starts here -->
         <header>
-            <a href="index.html"><img id="logo" src="assests/images/logo.png" alt="logo"></a>
-            <a href="login.html" target="_blank">Login</a>            
+            <a href="index.html" id="logo-a"><img id="logo" src="assests/images/logo.png" alt="logo"></a>
+            <a href="login.html" id="login-a">Login</a>            
         </header>
         <!-- Header ends here -->
 
@@ -29,16 +29,21 @@
         <!-- Content Div starts here -->
         <div id="contentDiv">
             <section id="hotelDetails">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Image of Radisson Blu Hotel">
-                <h2>Radisson Blu Hotel</h2>
+                <div id="image-div">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Image of Radisson Blu Hotel">
+                </div>
+                <div id="detail-div">
+                    <h2>Radisson Blu Hotel</h2>
                 <p>
                     #38 of 1,289 hotels in New Delhi
                     <br><br>
                     National Highway 8, New Delhi 110017 India
                 </p>
+                </div>
+                
             </section>
 
-            <section>
+            <section id="booking-details">
                 <p>
                     <article id="customerDetails">
                         <strong>Name:</strong> John Doe

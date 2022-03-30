@@ -20,44 +20,61 @@
 
         <!-- Header starts here -->
         <header>
-            <a href="index.html"><img id="logo" src="assests/images/logo.png" alt="logo"></a>
-            <a href="login.html">Login</a>            
+            <a href="index.html" id="logo-a"><img id="logo" src="assests/images/logo.png" alt="logo"></a>
+            <a href="login.html" id="login-a">Login</a>            
         </header>
         <!-- Header ends here -->
 
 
         <!-- Content Div starts here -->
         <div id="contentDiv">
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Image of Radisson Blu Hotel">
-            <br>
+
+            <section id="imageAndForm">
+                <div id="image-div">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Image of Radisson Blu Hotel">
+                </div>
+                
+                <div id="form-div">
+                    <form action="payment.html" method="get">
+                        <ul style="list-style-type: none;">
+                            <li class="list-Style">
+                                <label class="label-Style" for="number">Adults:</label>
+                                <input class="input-Style" type="number" name="adults" id="number" required value="1" min="1">
+                            </li>
+                            <li class="list-Style">
+                                <label class="label-Style" for="name">Name:</label>
+                                <input class="input-Style" type="text" name="name" id="name" required>
+                            </li>
+                            <li class="list-Style">
+                                <label class="label-Style" for="fromDate">From Date:</label>
+                                <input class="input-Style" type="date" name="fromDate" id="fromDate" required>
+                            </li>
+                            <li class="list-Style">
+                                <label class="label-Style" for="toDate">To Date:</label>
+                                <input class="input-Style" type="date" name="toDate" id="toDate" required>
+                            </li>
+                            <li class="list-Style">
+                                <label class="label-Style" for="total">Total:</label>
+                                <input class="input-Style" type="text" name="price" readonly>
+                            </li>
+                            <li class="list-Style">
+                                <input id="button" type="submit" value="Book Now">
+                            </li>   
+                        </ul>    
+                    </form>
+                </div>
+                
+            </section>
             
-            <form action="payment.html" method="get">
-                <label for="number">Adults:</label>
-                <input type="number" name="adults" id="number" required value="1" min="1">
-                <br>
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name" required>
-                <br>
-                <label for="fromDate">From Date:</label>
-                <input type="date" name="fromDate" id="fromDate" required>
-                <br>
-                <label for="toDate">To Date:</label>
-                <input type="date" name="toDate" id="toDate" required>
-                <br>
-                <label for="total">Total:</label>
-                <input type="text" name="price" readonly>
-                <br>
-                <input type="submit" value="Book Now">
-            </form>
 
             <article>
                 <h2>Radisson Blu Hotel</h2>
                 <p>
-                    RATING
-                    <br><br>
-                    5 Star
-                    <br><br>
-                    AMENITIES
+                    <h4>RATING</h4>
+                    
+                    <p>5 Star</p>
+                    
+                    <h4>AMENITIES</h4>
 
                     <ul>
                         <li>Room Service</li>
@@ -67,7 +84,7 @@
                         <li>Pool</li>
                     </ul>
 
-                    <h5>DESCRIPTION</h5>
+                    <h4>DESCRIPTION</h4>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nulla blanditiis fugiat odit autem eaque iste, reprehenderit perspiciatis temporibus voluptas? Beatae eum neque nesciunt eveniet cupiditate ullam culpa, sed fugit?
                 </p>
             </article>

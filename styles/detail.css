@@ -1,7 +1,6 @@
 #contentDiv img{
-    height: 500px;
-    width: 500px;
-    margin: 2% 4% 0 4%;
+    max-height: 350px;
+    padding: 2% 0;
 }
 
 #contentDiv{
@@ -10,9 +9,66 @@
 }
 
 form{
-    margin: 0 4% 1% 4%;
+    height: 100%;
 }
 
 article{
     margin: 1% 4% 2% 4%;
+}
+
+article h4{
+    font-family: cursive;
+}
+
+#button{
+    padding: 2%;
+}
+
+
+
+#imageAndForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 400px;
+    margin: 0 2%;
+}
+
+#image-div{
+    display: flex;
+    flex-grow: 3;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+form{
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#form-div{
+    flex-grow: 1;
+    padding: 5px;
+    border-left: 0px;
+    border-top: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.list-Style{
+    display: flex;
+    padding: 0.5em;
+}
+
+.label-Style{
+    flex: 1;
+}
+
+.input-Style{
+    width: 60%;
 }
