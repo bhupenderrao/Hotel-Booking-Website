@@ -28,7 +28,14 @@
     outline: none;
 }
 
-#cityCards-Container{
+#cityCards-Container-1{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4% 0;
+    margin-bottom: 7%;
+}
+
+#cityCards-Container-2{
     display: flex;
     justify-content: space-evenly;
     margin: 4% 0;

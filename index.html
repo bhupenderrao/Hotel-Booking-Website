@@ -46,46 +46,97 @@
             <!-- City cards start here -->
             <section id="cityCards-Container">
 
-                <!-- City Card - 1 -->
-                <div class="city-card">
-                    <a href="list.html">
-                        <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="image of delhi">
+                <div id="cityCards-Container-1">
+
+                    <!-- City Card - 1 -->
+                    <div class="city-card">
+                        <a href="list.html">
+                            <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="image of delhi">
+                                <div class="overlay">
+                                    <div class="text">Delhi</div>
+                                </div>
+                        </a>
+                    </div>
+                    
+                    <!-- City Card - 2 -->
+                    <div class="city-card">
+                        <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="image of goa">
+                        <div class="overlay">
+                            <div class="text">Goa</div>
+                        </div>
+                    </div>
+
+                    <!-- City Card - 3 -->
+                    <div class="city-card">
+                        <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="image of charminar">
+                        <div class="overlay">
+                            <div class="text">Hyderabad</div>
+                        </div>
+                    </div>
+
+                    <!-- City Card - 4 -->
+                    <div class="city-card">
+                        <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="image of kolkata">
+                        <div class="overlay">
+                            <div class="text">Kolkata</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- This div is used to hide 4 hotel images of container-2 with view more button -->
+                <div class="collapse" id="collapseExample">
+
+                    <div id="cityCards-Container-2">
+
+                        <!-- City Card - 1 -->
+                        <div class="city-card">
+                            <a href="list.html">
+                                <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" alt="image of chennai">
+                                    <div class="overlay">
+                                        <div class="text">Chennai</div>
+                                    </div>
+                            </a>
+                        </div>
+                        
+                        <!-- City Card - 2 -->
+                        <div class="city-card">
+                            <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg" alt="image of agra">
                             <div class="overlay">
-                                <div class="text">Delhi</div>
+                                <div class="text">Agra</div>
                             </div>
-                    </a>
-                </div>
-                
-                <!-- City Card - 2 -->
-                <div class="city-card">
-                    <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="image of goa">
-                    <div class="overlay">
-                        <div class="text">Goa</div>
+                        </div>
+
+                        <!-- City Card - 3 -->
+                        <div class="city-card">
+                            <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg" alt="image of jaipur">
+                            <div class="overlay">
+                                <div class="text">Jaipur</div>
+                            </div>
+                        </div>
+
+                        <!-- City Card - 4 -->
+                        <div class="city-card">
+                            <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg" alt="image of bengaluru">
+                            <div class="overlay">
+                                <div class="text">Bengaluru</div>
+                            </div>
+                        </div>
+
                     </div>
+
                 </div>
 
-                <!-- City Card - 3 -->
-                <div class="city-card">
-                    <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="image of charminar">
-                    <div class="overlay">
-                        <div class="text">Hyderabad</div>
-                    </div>
-                </div>
-
-                <!-- City Card - 4 -->
-                <div class="city-card">
-                    <img class="cityImage" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="image of kolkata">
-                    <div class="overlay">
-                        <div class="text">Kolkata</div>
-                    </div>
-                </div>
             </section>
 
             <section id="viewMore" class="d-flex justify-content-center">
-                <a href="#">
-                    <button type="button" class="btn btn-secondary">View More</button>
-                </a>    
+                <button class="btn btn-secondary" id="viewMore-button" type="button" value="View More" onclick="change()" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    View More
+                  </button>   
             </section>
+
+
+                
             <!-- City card ends here -->
             
         </div>
@@ -125,6 +176,20 @@
     <!-- Main Div ends here -->
 
     <!-- Javascript -->
+    <script>
+        function change(){
+          var btn = document.getElementById("viewMore-button");
+            if (btn.value == "View More") {
+                btn.value = "View Less";
+                btn.innerHTML = "View Less";
+            }
+            else {
+                btn.value = "View More";
+                btn.innerHTML = "View More";
+            }
+        }    
+    </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
