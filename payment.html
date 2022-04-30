@@ -23,7 +23,9 @@
 
     <!-- For header and footer template -->
     <script defer src="scripts/common.js"></script>
+
     <script defer src="scripts/payment.js"></script>
+    
 </head>
 <body>
     <!-- Main Div starts here -->
@@ -42,14 +44,15 @@
             <!-- Section containing hotel image and its details -->
             <section id="hotelDetails">
                 <div id="image-div">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Image of Radisson Blu Hotel">
+                    <!-- <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Image of Radisson Blu Hotel"> -->
                 </div>
                 <div id="detail-div">
-                    <h2>Radisson Blu Hotel</h2>
+                    <h2 id="hotel-name"></h2>
                 <p>
-                    #38 of 1,289 hotels in New Delhi
+                    <span id="ranking"></span>
                     <br><br>
-                    National Highway 8, New Delhi 110017 India
+                    <span id="address"></span>
+                    
                 </p>
                 </div>
                 
