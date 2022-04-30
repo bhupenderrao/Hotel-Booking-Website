@@ -27,9 +27,9 @@ let sendHttpRequestHotel = () => {
           document.getElementById("ranking").innerText = result.ranking;
           document.getElementById("address").innerText = result.address;
  
-          let descriptionPara = document.createElement("h6");
-          descriptionPara.innerHTML = result.description;
-          document.getElementById("description").appendChild(descriptionPara);
+        //   let descriptionPara = document.createElement("h6");
+        //   descriptionPara.innerHTML = result.description;
+        //   document.getElementById("description").appendChild(descriptionPara);
  
          
        }     
